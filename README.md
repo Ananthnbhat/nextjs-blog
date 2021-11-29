@@ -6,14 +6,14 @@ Run below command start the dev server:
 npm run dev
 ```
 
-* routing using file system inside the pages folder
+- routing using file system inside the pages folder
 
-* layout.js acts like the root component App.js
+- layout.js acts like the root component App.js
 
-* layout.js uses CSS-Modules for css
+- layout.js uses CSS-Modules for css
 
-* The App component (\_app.js) is the top-level component which will be common across all the different pages. This is the only
-place where we import the global css (global.css), which will be applied for each and every page.
+- The App component (\_app.js) is the top-level component which will be common across all the different pages. This is the only
+  place where we import the global css (global.css), which will be applied for each and every page.
 
 Pre-rendering: There are 2 types: Static generation & Server-side rendering.
 
@@ -33,11 +33,17 @@ Because it’s meant to be run at build time, you won’t be able to use data th
 
 #### Only Allowed in a Page
 
-getStaticProps can only be exported from a page. You can’t export it from non-page files.
+getStaticProps can only be exported from a page (any file inside pages folder). You can’t export it from non-page files.
 
-If you do not need to pre-render the data, you can also use the following strategy called **Client-side Rendering**:
+If you do not need to pre-render the data, use **Client-side Rendering**:
 
 - Statically generate (pre-render) parts of the page that do not require external data.
 - When the page loads, fetch external data from the client using JavaScript and populate the remaining parts.
 
 This approach works well for user dashboard pages. Because a dashboard is a private, user-specific page, SEO is not relevant, and the page doesn’t need to be pre-rendered. The data is frequently updated, which requires request-time data fetching.
+
+#### Dynamic routing
+
+if the **page content** depends on external data -> use getStaticProps
+
+if the **page path** depends on external data -> create pages that beging and end with [ and ] (for dynamic routing).
