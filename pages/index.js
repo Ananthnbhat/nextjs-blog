@@ -18,6 +18,7 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
+        <p className={utilStyles.centre}>Blog under development ...</p>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>

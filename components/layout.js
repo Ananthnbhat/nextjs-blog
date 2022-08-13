@@ -6,7 +6,8 @@ import Link from 'next/link'
 import profilePic from '../public/images/fancy photo.jpg'
 
 const name = 'Ananth Bhat'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'Blog'
+
 
 export default function Layout({ children, home }) {
     return (
