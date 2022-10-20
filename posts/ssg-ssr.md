@@ -20,7 +20,7 @@ In that case, you can use **Server-Side Rendering**. It will be slower, but the 
 
 ## CSR
 
-Client Side Rendering is the traditional way of rendering a page in the browser. A user requests for a page and server sends all the resources & scripts to the browser, then a DOM tree is formed to create a HTML page. The rendering process takes some time during which the user has to wait.
+Client Side Rendering is the traditional way of rendering a page in the browser. A user requests for a page and server sends all the resources & scripts to the browser, then a DOM tree is formed to create a HTML page IN the browser on the client side. The rendering process takes some time during which the user has to wait.
 
 ## SSR
 
