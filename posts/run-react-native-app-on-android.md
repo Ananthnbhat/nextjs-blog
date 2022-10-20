@@ -1,9 +1,12 @@
 ---
-title: "How to run react native app on an android device using same network"
+title: "How to run react native app on an physical device using same network"
 date: "2022-10-10"
 ---
 
 Laptop OS: Windows
+Server: Django
+Device OS: Android
+React Native: CLI
 
 I was developing an app for the final year project using react native and needed it to run on my Android device and also connect to a local python server (Django). I could create an APK file and install it on my device but for that I would need to create keystore file as well (if you want to see how to do that check this link). But I simply wanted the development version of the app to run on my device to show it to my team members and professor. This is what I did -
 
